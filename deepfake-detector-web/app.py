@@ -210,7 +210,7 @@ class AdvancedDeepfakeDetector:
             # ===== BUILD RESPONSE =====
             verdict = 'FAKE' if is_fake else 'REAL'
             explanation = (
-                "⚠️ WARNING: This image is likely MANIPULATED, AI-GENERATED, or a DEEPFAKE!"
+                " WARNING: This image is likely MANIPULATED, AI-GENERATED, or a DEEPFAKE!"
                 if is_fake else
                 "✓ VERIFIED: This image appears to be AUTHENTIC and REAL"
             )
@@ -494,3 +494,4 @@ if __name__ == '__main__':
     print("="*80 + "\n")
     
     app.run(debug=True, host='0.0.0.0', port=5000)
+
